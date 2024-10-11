@@ -1,10 +1,9 @@
 import math
 
 
-def area(r):
-    return math.pi * r * r
+def area(r): '''Функция принимает радиус круга'''
+    return math.pi * r * r '''Функция возвращает площадь круга'''
 
 
-def perimeter(r):
-    return 2 * math.pi * r
-
+def perimeter(r):  '''Функция принимает радиус круга'''
+    return 2 * math.pi * r '''возвращает периметр круга'''
