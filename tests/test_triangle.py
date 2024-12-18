@@ -36,4 +36,3 @@ def test_perimeter_neg():
     x, y, z = -5, -12, -13
     with pytest.raises(AssertionError):
         perimeter(x, y, z)
-        
