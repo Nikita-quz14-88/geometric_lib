@@ -114,3 +114,10 @@ def test_wrong_size_triangle():
     size = [1, 2, 10]
     with pytest.raises(AssertionError):
         calc(fig, func, size)
+        
+def test_wrong_size_triangle():
+    fig = 'triangle'
+    func = 'area'
+    size = [1, 2, 10]
+    with pytest.raises(AssertionError):
+        calc(fig, func, size)
