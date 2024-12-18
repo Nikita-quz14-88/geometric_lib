@@ -36,3 +36,10 @@ def test_perimeter_neg():
     x, y, z = -5, -12, -13
     with pytest.raises(AssertionError):
         perimeter(x, y, z)
+        
+def test_wrong_size_triangle():
+    fig = 'triangle'
+    func = 'area'
+    size = [1, 2, 10]
+    with pytest.raises(AssertionError, match="Треугольник с такими сторонами не существует"):
+        calc(fig, func, size)
